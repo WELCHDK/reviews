@@ -107,13 +107,11 @@
 	background-color: black;
 	color: white;
 	border: none;
-	/*margin-left: auto;*/
 }
 #reviewButton {
 	margin-bottom: 6px;
 	text-align: center;
 	background-color: black;
-	/*background-color: #00aeef;*/
 	color: white;
 	border-radius: 3px;
 	border: 1px solid;

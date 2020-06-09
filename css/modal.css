@@ -1,8 +1,4 @@
-/*body {
-    background-color: black;
-    color: white;
-  }*/
-  /*@import "restaurant.css";*/
+
 .modal {
     height:250px;
     width: 200px;
@@ -10,9 +6,7 @@
     border-radius: 15px;
     background-color: rgba(0,0,0,.8);
     color: white;
-    
     z-index: 99;
-    
     margin-top: 30%;
   }
   .add-name {
@@ -56,16 +50,3 @@
     border: 1px solid white
 
   }
- /*.block {
-     width: 100px;
-     height: 200px;
-     background-color: white;
-     margin-top: 25%;
-     color: black;
- }
- #block2 {
-     margin-left: 150px;
-     border-radius: 45px;
-     /*margin-top: 25%*/
-
-/*}*/
