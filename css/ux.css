@@ -1,0 +1,44 @@
+
+.gm-style .gm-style-iw {
+	background-color: #81cf8b;
+	background-color: black;
+	border: 2px solid white;
+	/*box-shadow: 2px 2px ;*/
+}
+
+.gm-style .gm-style-iw:hover {
+	background-color: white;
+	padding: 20px;
+	/*box-shadow: 2px 2px ;*/
+}
+
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+
+
+/* Track */
+/*::-webkit-scrollbar-track {
+	/*background: #f1f1f1;*/
+/*}*/
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #00aeef;
+}
+/* Handle */
+/*.reviewPanel::-webkit-scrollbar-thumb {
+	background: #00aeef;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+	border-left: 2px solid white;
+	
+}
+

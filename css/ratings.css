@@ -1,0 +1,131 @@
+#rate {
+	margin-top: 75%
+}
+
+.ratings p {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 3px gray, 0 0 3px darkblue;
+	border-radius: 25%;
+	-webkit-border-radius: 25%;
+	cursor: pointer;
+}
+
+.ratings {
+	width: 300px;
+	background-color: black;
+	margin-bottom: -75px;
+	display: inline-block;
+}
+
+#rating {
+	font-size: 13px;
+	font-family: Arial Unicode MS;
+}
+
+#addRating {
+	margin: auto;
+	margin-top: 15px;
+	font-size: 16px;
+}
+
+#place-rating {
+	font-size: 1.5em;
+	background-color: black;
+	color: white;
+	padding-right: 2px;
+}
+
+.star {
+	margin-top: -15px;
+	margin-left: 25px;
+	text-align: center;
+	filter: blur(1.5px);
+}
+
+#star {
+	font-size: 1.5em;
+	color: gold;
+	background-color: black;
+}
+
+.star-list {
+	color: gold;
+	margin: auto;
+}
+
+
+.newReview span:last {
+	font-size: 12px !important;
+}
+
+.newReview span:first {
+	font-size: 14px !important;
+}
+
+#newReview {
+	padding-right: 5px;
+	margin-right: 5px;
+	height: 155px;
+	width: 330px;
+	padding-bottom: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#newReview::-webkit-scrollbar-thumb {
+	background: #00aeef;
+}
+#newReview::-webkit-scrollbar-track {
+	background-color: white;
+}
+#newReview::-webkit-scrollbar {
+	width: 25px;
+}
+#newReview::-webkit-scrollbar-thumb:hover {
+	background: gray; 
+	border: 2px solid white
+	
+}
+
+
+.newReview p {
+	font-size: 16px;
+	padding-right: 10px;
+	margin-right: 12px;
+}
+
+#review {
+	text-align: left;
+	font-size: 24px;
+	background-color: black;
+	color: white;
+	border: none;
+	/*margin-left: auto;*/
+}
+#reviewButton {
+	margin-bottom: 6px;
+	text-align: center;
+	background-color: black;
+	/*background-color: #00aeef;*/
+	color: white;
+	border-radius: 3px;
+	border: 1px solid;
+}
+.reviewInput {
+	display: none;
+}
+#chatinput {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	background-color: black;
+	color: white;
+	border-color: black;
+	border-bottom: 2px solid gray;
+}

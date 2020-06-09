@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+   <head>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-uoX06n_IgxRQxKcyHQ6Th2CIDqhLqxQ&libraries=geometry,places"></script>
+         <!--<script async defer
+         src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyA-uoX06n_IgxRQxKcyHQ6Th2CIDqhLqxQ"></script>-->
+         
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <title>Chompers Reviews</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+   </head>
+   <body>
+      <h3 id="pageHead">Chompers Reviews</h3>
+      <p id="subhead">Find Restaurants</p>
+      <div id="locationField">
+         <button id="nearby" class="main-button" title="Nearby Restaurants">Near
+         </button>
+         <!--<button id="location" class="main-button" title="Your Location">Location
+         </button> --> 
+         <div id="autocompleteDiv">
+            <input id="autocomplete" type="text" /><!--placeholder="Enter a City"-->
+         </div>
+      </div>
+      <div>
+         <div class="container" id="map">
+         </div>
+
+          <div id="modal" class="modal">
+      </br>
+      <input type="text" id="name-input" class="add-name" placeholder="Place Name"/>
+      </br>
+      <input type="text" id="add-input" class="add-name"  placeholder="Address"/>
+   </br>
+      <button id="place-button" class="add-place">Add Place</button>
+
+    </div>
+      </div>
+    
+      <div id="restaurantsPage" class="restPage">
+
+         <!--<div>-->
+       
+            <div id="container2" class="container2">
+            
+               <select id="headingNew" >
+                  <option id="option" value="">
+                     <h2>&nbsp;Restaurants</h2>
+                  </option>
+                  <option class="star-list" value="all"> All</option>
+                  <option class="star-list" value="5">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</option>
+                  <option class="star-list" value="4">&bigstar;&bigstar;&bigstar;&bigstar;</option>
+                  <option class="star-list" value="3">&bigstar;&bigstar;&bigstar;</option>
+                  <option class="star-list" value="2">&bigstar;&bigstar;</option>
+                  <option class="star-list" value="1">&bigstar;</option>
+               </select>
+               <div class ="newRest" id="newRest">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+               </div>
+               <!--<div id="streetview"></div>-->
+               <!--<div align="center" class="container3">-->
+                 
+                  <div>
+                     <img src="images/blue_tagline.png" id="bluelogo2" alt="blue tagline"/>
+                  </div>
+               </div>
+            </div>
+        <!-- </div>-->
+      </div>
+      
+      <div class="reviewPanel" id="reviewPanel">
+         <h2 id="heading">Restaurant Name</h2>
+         <h4 id="address">Address</h4>
+         <div class="container3" id="logoDiv">
+            <img id="official-logo" src="images/Chompers Official Logo.png" alt="Chompers Logo"/> 
+            <div id="place-photo">
+               
+               <div class="place-images" id="static-sv">
+                  <!--<div class="numbertext">1 / 2</div>-->
+                </div>
+              
+                <div class="place-images" id="user-photos" >
+                 <!--<div class="numbertext">2 / 2</div>-->
+                </div>
+              
+              
+                  
+                <a class="prev" >❮</a>
+                <a class="next" >❯</a>
+               
+        
+               
+               
+               <!--<img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=48.858370,2.294481&heading=151.78&pitch=-0.76&key=AIzaSyA-uoX06n_IgxRQxKcyHQ6Th2CIDqhLqxQ">--></div>
+         <!--<img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=${lat},${lng}&heading=151.78&pitch=-0.76&key=AIzaSyA-uoX06n_IgxRQxKcyHQ6Th2CIDqhLqxQ">-->
+         </div>
+         <div class="ratings" id="ratings" title="Your Rating">
+            <p><span class="star" value="1" id="str1">&star;</span></p>
+            <p><span class="star" value="2" id="str2">&star;</span></p>
+            <p><span class="star" value="3" id="str3">&star;</span></p>
+            <p><span class="star" value="4" id="str4">&star;</span></p>
+            <p><span class="star" value="5" id="str5">&star;</span></p>
+         </div>
+         <h2 id="review">Reviews</h2>
+         <div class="newReview" id="newReview">
+            <p class="newReview">
+            </p>
+            <p class="newReview">
+               Click the "Near" button to show</br>nearby restaurants and photos.
+               
+            </p>
+            <p class="newReview">
+               Select a restaurant to review.
+               
+            </p>
+            <p class="newReview">Reviews help keep us in business</br> (and the restaurants too).</p>
+            <p class="newReview"></p>
+         </div>
+         <div class="container3">
+            <button class="btn2 btn-default btn md" id="addReview" tile="Please select a restaurant">+ Your Review</button>
+            <div>
+    
+               <div class="reviewInput" id="reviewInput">
+                  <input type="text" name="fname" id="chatinput" placeholder="Add a review">
+                  </br>
+                  <button id="reviewButton">Submit </button>
+               </div>
+               <div id="block"></div>
+             
+              
+            </div>
+         </div>
+        
+      </div>
+      </div>
+      
+     
+      <script async src="js/addReviews.js"> </script>
+      <script async src="js/addRating.js"> </script>
+      <script async src="js/reset.js"> </script>
+      <script async src="js/search.js"> </script>
+      <script async src="js/starSelect.js"></script>
+      
+      <script async src="js/index.js"></script>
+      <script async src="js/default_location.js"></script>
+      <!--<script async src="js/vs_data.js"></script>-->
+      <script async src="js/handlers.js"></script>
+      <script async src="js/gallery.js"></script>
+      <!-- <script src="js/addReviews.js"> </script>
+      <script src="js/addRating.js"> </script>
+      <script src="js/reset.js"> </script>
+      <script async src="js/search.js"> </script>
+      <script src="js/starSelect.js"></script>
+      
+      <script async src="js/index.js"></script>
+      <script src="js/default_location.js"></script>
+      <script async src="js/vs_data.js"></script>
+      <script async src="js/handlers.js"></script>
+      <script src="js/gallery.js"></script>-->
+     
+     <!--<script src="js/autocomplete.js"> </script>-->
+ 
+   </body>
+</html>

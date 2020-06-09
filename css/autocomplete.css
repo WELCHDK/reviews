@@ -1,0 +1,45 @@
+/*autocomplete*/
+
+#autocomplete {
+	color: black;
+	background-color: transparent;
+	color: black;
+	border: none;
+	outline: none;
+	margin-left: 15px;
+	margin-top: -15px;
+	padding-bottom: 5px;
+}
+
+#autocompleteDiv {
+	margin-top: -20px;
+	width: 120px
+}
+.restaurant-search {
+	background-color: transparent;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 440px;
+	z-index: 1;
+}
+
+#controls {
+	-webkit-box-flex: 1 1 140px;
+	-ms-flex: 1 1 140px;
+	flex: 1 1 140px;
+}
+
+#country {
+	width: 100%;
+}
+#findrestaurants {
+	font-size: 14px;
+}
